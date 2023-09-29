@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+	float m,n; scanf("%f%f", &m, &n);
+	float mf,nf;
+	mf = (4*m-n)/2;
+	nf = m - mf;
+	if(mf != int(mf) || nf != int(nf) || mf <= 0 || nf <= 0){
+		printf("%d", -1);
+	}
+	else{
+		printf("%s", "Ga = ");
+		printf("%.0f\n", mf);
+		printf("%s", "Cho = ");
+		printf("%.0f\n", nf);
+	}
+	return 0;
+}
