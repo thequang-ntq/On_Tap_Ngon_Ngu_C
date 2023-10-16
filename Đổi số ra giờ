@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<math.h>
+
+long n,a,b,c;
+char d = 58;
+int main(){
+	scanf("%ld",&n);
+	if ( n >= 0 &&  n <= 86399){
+	a = n / 3600;
+	b = (n - 3600*a) / 60;
+	c = n - a*3600 - b*60;
+	printf("%02ld",a);
+	printf("%c",d);
+	printf("%02ld",b);
+	printf("%c",d);
+	printf("%02ld",c);
+}
+}
